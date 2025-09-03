@@ -1,16 +1,19 @@
- <?php
+<?php
 $ip = $_SERVER['REMOTE_ADDR'];
 
-// DADOS DO BANCO
-$host = "sql301.infinityfree.com";
-$user = "if0_39274626";
-$pass = "Rednav003";
-$dbname = "if0_39274626_visitantes";
+// DADOS DO BANCO (Lendo das variáveis de ambiente do Render)
+$host = getenv('DB_HOST');
+$user = getenv('DB_USER');
+$pass = getenv('DB_PASS');
+$dbname = getenv('DB_NAME');
 
 // Conecta ao banco
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
-    die("Erro na conexão: " . $conn->connect_error);
+    // Exibe erro na tela apenas para debug, remova em produção
+    echo "<p>Erro na conexão com o banco de dados. Configure as variáveis de ambiente corretamente no Render.</p>";
+    error_log("Erro na conexão com o banco de dados: " . $conn->connect_error);
+    exit();
 }
 
 // ============================

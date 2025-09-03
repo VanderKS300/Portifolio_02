@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">Vander Baptista de Lima</div>
@@ -28,7 +27,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -82,7 +80,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
@@ -154,7 +151,6 @@
                     <div class="skill-item">MySQL</div>
                 </div>
             </div>
-            <!-- Escolaridade -->
             <div class="escolaridade">
                 <div class="section-header">
                     <h3 class="skills-title">Escolaridade</h3>
@@ -185,7 +181,6 @@
         </div>
     </section>
 
-        <!-- Experiência Profissional -->
         <section id="experience" class="projects">
             <div class="container">
                 <div class="section-header">
@@ -242,8 +237,7 @@
             </div>
         </section>
 
-            <!-- Certificações -->
-        <section id="certifications" class="about">
+            <section id="certifications" class="about">
             <div class="container">
                 <div class="section-header">
                     <h3 class="section-title">Certificações</h3>
@@ -361,7 +355,6 @@
             </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
@@ -530,7 +523,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
@@ -578,7 +570,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Vander Baptista de Lima. Todos os direitos reservados.</p>
